@@ -17,12 +17,12 @@ public class BookMyshowRealDevice {
 
 	@Test
 	public void Login() throws MalformedURLException, InterruptedException {
-	       File appDir = new File("src");	   
+	       File appDir = new File("C:\\eclipse-workspace-201906\\Appium2\\src\\main\\java\\");	   
 	       File app = new File(appDir, "bookMyShow-ucb.apk");
 
 	DesiredCapabilities cap=new DesiredCapabilities();
 	cap.setCapability(MobileCapabilityType.PLATFORM_NAME,MobilePlatform.ANDROID);
-	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus");
+	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
 	cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "100");
 	cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 	AndroidDriver<AndroidElement> driver=new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap );

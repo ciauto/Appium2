@@ -27,7 +27,7 @@ public class DemoRealDeviceChrome {
 	//Create Object of URL class and specify the Appium server address
 	URL url = new URL("http://127.0.0.1:4723/wd/hub");
 	
-	System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver_244\\chromedriver.exe");
+//	System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver_244\\chromedriver.exe");
 	//Create object of AndroidDriver class and pass the url and capability
 	AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(url, cap);
 	
@@ -35,7 +35,7 @@ public class DemoRealDeviceChrome {
 	
 	driver.get("http://facebook.com");
 	
-	System.out.println("Title "+driver.getTitle());
+	System.out.println("Title :::"+" " +driver.getTitle());
 	
 	driver.quit();
 	

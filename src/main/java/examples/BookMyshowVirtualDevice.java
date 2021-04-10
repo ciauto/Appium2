@@ -24,7 +24,7 @@ public class BookMyshowVirtualDevice {
 
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus4");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel3");
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "100");
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(
